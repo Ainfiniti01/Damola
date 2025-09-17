@@ -7,7 +7,7 @@ import { loadFontsFromTailwindSource } from './plugins/loadFontsFromTailwindSour
 export default defineConfig({
   // Keep them available via import.meta.env.NEXT_PUBLIC_*
   envPrefix: 'NEXT_PUBLIC_',
-  base: './', // Use relative base path as per Option B
+  base: '/Damola/', // Set base for GitHub Pages subpath
   root: '.', // Set project root to current directory
   build: {
     rollupOptions: {

@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "deploy-web": "cd apps/web && npm run build && cd ../.. && npx gh-pages -d apps/web/build/client -r https://github.com/Ainfiniti01/Damola.git"
+  },
   "devDependencies": {
     "gh-pages": "^6.3.0",
     "vite": "^7.1.4"
