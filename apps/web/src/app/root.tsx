@@ -33,6 +33,8 @@ import { HotReloadIndicator } from '../__create/HotReload';
 import { useSandboxStore } from '../__create/hmr-sandbox-store';
 import type { Route } from './+types/root';
 import { useDevServerHeartbeat } from '../__create/useDevServerHeartbeat';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import GoToTopButton from '@/components/GoToTopButton';
 
 export const links = () => [];
 
@@ -389,10 +391,24 @@ export function Layout({ children }: { children: ReactNode }) {
   );
 }
 
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 60 * 5, // 5 minutes
+      gcTime: 1000 * 60 * 30, // 30 minutes (formerly cacheTime)
+      retry: 1,
+      refetchOnWindowFocus: false,
+    },
+  },
+});
+
 export default function App() {
   return (
-    <SessionProvider>
-      <Outlet />
-    </SessionProvider>
+    <QueryClientProvider client={queryClient}>
+      <SessionProvider>
+        <Outlet />
+        <GoToTopButton />
+      </SessionProvider>
+    </QueryClientProvider>
   );
 }
