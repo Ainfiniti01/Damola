@@ -327,7 +327,8 @@ export default function ProductsPage() {
             {/* Logo */}
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <h1 className="text-xl font-bold text-[#6A0DAD] font-sora">Damola's Essentials</h1>
+                <h1 className="text-3xl font-great-vibes text-purple-500">Damola's</h1>
+                <p className="uppercase tracking-widest font-poppins text-xs">Essentials</p>
               </div>
             </div>
 
@@ -733,7 +734,12 @@ export default function ProductsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4 text-[#FFC700] font-sora">Damola's Essentials</h3>
+              <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <h1 className="text-3xl font-great-vibes text-purple-500">Damola's</h1>
+                <p className="uppercase tracking-widest font-poppins text-xs">Essentials</p>
+              </div>
+            </div> <br />
               <p className="text-gray-300">Your trusted partner for premium fashion and lifestyle products.</p>
             </div>
             <div>

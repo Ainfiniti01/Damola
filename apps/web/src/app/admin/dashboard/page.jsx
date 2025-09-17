@@ -631,7 +631,12 @@ const [showEmailConfirmationModal, setShowEmailConfirmationModal] = useState(fal
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <h1 className="text-xl font-bold text-[#6A0DAD] font-sora">Damola's Essentials</h1>
+              <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <h1 className="text-3xl font-great-vibes text-purple-500">Damola's</h1>
+                <p className="uppercase tracking-widest font-poppins text-xs">Essentials</p>
+              </div>
+            </div>
               <span className="ml-2 text-sm text-gray-500">Admin Dashboard</span>
             </div>
             
@@ -856,7 +861,7 @@ const [showEmailConfirmationModal, setShowEmailConfirmationModal] = useState(fal
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                             <div className="flex space-x-2">
-                              <button className="text-[#6A0DAD] hover:text-purple-600">
+                              <button className="text-[#6A0DAD] hover:text-purple-500">
                                 <Eye size={16} />
                               </button>
                               <button 
@@ -972,7 +977,7 @@ const [showEmailConfirmationModal, setShowEmailConfirmationModal] = useState(fal
                         </td>
                         <td className="px-4 py-2">
                           <button
-                            className="text-purple-600 hover:underline text-sm"
+                            className="text-purple-500 hover:underline text-sm"
                             onClick={() => handleViewOrder(order)}
                           >
                             View

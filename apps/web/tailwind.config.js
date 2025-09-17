@@ -6,6 +6,8 @@ module.exports = {
 		},
 		extend: {
 			fontFamily: {
+				'great-vibes': ['Great Vibes', 'cursive'],
+				poppins: ['Poppins', 'sans-serif'],
 				'a-bee-zee': 'A Bee Zee',
 				'ad-la-m-display': 'Ad La M Display',
 				'ar-one-sans': 'Ar One Sans',

@@ -151,7 +151,7 @@ export default function AdminLoginPage() {
           <div className="mt-6 text-center">
             <a 
               href="/"
-              className="text-[#6A0DAD] hover:text-purple-600 text-sm font-medium"
+              className="text-[#6A0DAD] hover:text-purple-500 text-sm font-medium"
             >
               ← Back to Website
             </a>
